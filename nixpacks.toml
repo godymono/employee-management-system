@@ -1,6 +1,6 @@
 # Railway / Nixpacks build for Laravel + Vite (PHP 8.4 from composer.json)
 [phases.setup]
-nixPkgs = ["...", "nodejs_22"]
+nixPkgs = ["...", "nodejs_20"]
 
 [phases.install]
 cmds = ["...", "npm ci"]
