@@ -1,0 +1,10 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+# Run before traffic switches to the new release
+releaseCommand = "bash railway/release.sh"
+healthcheckPath = "/up"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5
